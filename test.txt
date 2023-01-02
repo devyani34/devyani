@@ -45,3 +45,30 @@ vector<int> minAnd2ndMin(int a[], int n) {
     
     
 }
+
+AAJ KA SAWAL   02-JAN-2023
+// REMOVE VOWELS FROM STRING //
+class Solution{
+public:	
+		
+	string removeVowels(string S) 
+	{
+	    int l=S.length();
+	  string str;
+	    for(int i=0;i<l;i++)
+	    {
+	        
+	        if(S.at(i)==97||S.at(i)==101||S.at(i)==105||S.at(i)==111||S.at(i)==117)
+	        continue;
+	        else
+	        {
+	            str.push_back(S[i]);
+	            
+	        }
+	    }
+	    
+	    
+	    return str;
+	    
+	}
+};
