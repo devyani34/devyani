@@ -72,3 +72,22 @@ public:
 	    
 	}
 };
+
+QUESTION 02 DATE-03-JAN-2023
+//SORT COLORS//
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int i;
+        for(i=0;i<nums.size();i++)
+        {
+            for(int j=0;j<nums.size();j++)
+            {
+            if(nums.at(i)<nums.at(j))
+            {
+                swap(nums.at(i),nums.at(j));
+            }
+            }
+        }
+    }
+};
