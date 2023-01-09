@@ -186,3 +186,25 @@ public:
 };
 TIME COMPLEXITY-O(N)
 SPACE COMPLEXITY-O(1)
+
+AAJ KA SAWAL // DATE- 09/JAN/2023
+
+//QUESTION 01//POWER OF 2
+class Solution{
+    public:
+    // Function to check if given number n is a power of two.
+    bool isPowerofTwo(long long n){
+        if(n==1)
+        return 1;
+        if(n==0)
+        return 0;
+        while(n>2)
+        {
+            if(n%2==0)
+            n=n/2;
+            else
+            return 0;
+        }
+        return 1;
+     }
+};
