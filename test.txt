@@ -208,3 +208,29 @@ class Solution{
         return 1;
      }
 };
+
+QUESTION 02 // SUM OF PRIMES
+class Solution{
+public:
+    int primeSum(int N){
+        // code here
+        int sum=0,count=0;
+        while(N!=0)
+        {
+            int rem=N%10;
+            if(rem==2||rem==3||rem==5||rem==7)
+          {
+             count=1;
+            sum=sum+rem;
+        
+          }
+          N=N/10;
+          
+        }
+        
+        if(count==0)
+        return 0;
+         return sum;
+        }
+};
+
