@@ -281,3 +281,29 @@ class Solution
 };
 TIME COMPLEXITY-O(|S|)
 SPACE COMPLEXITY-O(|S|)
+
+AAJ KA SAWAL DATE-11/JAN/2023
+QUESTION 01
+DUPLICATE ZEROS
+class Solution {
+public:
+    void duplicateZeros(vector<int>& arr) {
+       int l=arr.size();
+       
+       for(int i=0;i<l-1;i++)
+       {
+           if(arr[i]==0)
+           {
+            for(int j=l-1;j>i;j--)
+            {
+            arr[j]=arr[j-1];
+            
+            }
+            arr[i+1]=0;
+            i++;
+           }
+           else
+           continue;
+       } 
+    }
+};
