@@ -328,3 +328,21 @@ public:
       return b;  
     }
 };
+
+AAJ KA SAWAL DATE-12/JAN/2023
+QUESTION 01 // 
+COUNT PREFIX OF THE GIVEN STRING
+class Solution {
+public:
+    int countPrefixes(vector<string>& words, string s) {
+        int count=0;
+        for(int i=0;i<words.size();i++)
+        {
+            if(words[i]==s.substr(0,words[i].size()))
+            count++;
+        }
+        return count;
+    }
+};
+TIME COMPLEXITY - O(N)
+SPACE COMPLEXITY - O(1)
