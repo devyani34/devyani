@@ -392,3 +392,26 @@ class Solution {
 };
 TIME COMPLEXITY - O(LOG N)
 SPACE COMPLEXITY - O(1)
+
+QUESTION 02
+//MAXIMUM ICE CREAM BARS//
+class Solution {
+public:
+    int maxIceCream(vector<int>& costs, int coins) {
+        sort(costs.begin(),costs.end());
+        int count=0;
+        for(int i=0;i<costs.size();i++)
+        {
+            if(costs[i]>coins)
+             break;
+            coins=coins-costs[i];
+            count++;
+            
+        }
+    
+        return count;
+        
+    }
+};
+TIME COMPLEXITY - O(NLOGN)
+SPACE COMPLEXITY - O(1)
