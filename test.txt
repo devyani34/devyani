@@ -365,3 +365,30 @@ class Solution{
 };
 TIME COMPLEXITY - O(N)
 SPACE COMPLEXITY -O(N)
+
+AAJ KA SAWAL DATE- 13/JAN/2023
+QUESTION 01
+// BINARY SEARCH //
+class Solution {
+  public:
+    int binarysearch(int arr[], int n, int k) {
+        int mid;
+        int start=1;
+        int end=n;
+        mid=(end-start)/2+start;
+        while(start<=end)
+        {
+            if(arr[mid]==k)
+            return mid;
+            else if(arr[mid]>k)
+            end=mid-1;
+            else if(arr[mid]<k)
+            start=mid+1;
+            mid=(end-start)/2+start;
+        }
+        
+        return -1;
+    }
+};
+TIME COMPLEXITY - O(LOG N)
+SPACE COMPLEXITY - O(1)
